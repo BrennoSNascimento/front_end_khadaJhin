@@ -1,0 +1,173 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+.fundo
+{
+    width: 100%;
+    height: 100vh;
+    margin: 0 auto;
+    background-color: hsl(185, 75%, 39%);
+    overflow:hidden;
+    position: relative;
+}
+
+
+.img-top
+{   
+    position:absolute;
+    width: 50%;
+    height:100%;
+    overflow: hidden;
+    border-radius: 50%;
+    left: -100px;
+    top: -300px;
+}
+
+.top 
+{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.img-bot
+{   
+    position:absolute;
+    width: 50%;
+    height:100%;
+    overflow: hidden;
+    border-radius: 50%;
+    right: 10px;
+    top: 300px;
+}
+
+.bot
+{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.box1
+{
+    
+    width: 360px;
+    height: 380px;
+    position: absolute;
+    background-color: white;
+    border-radius: 5%;
+    margin: auto;
+    overflow: auto;
+    transform: translate(-50%,-50%);
+    left: 50%;
+    top : 50%;
+}
+
+.capa
+{
+    
+    width: 100%;
+    height: 127px;
+    background-image: url('../img/dentro.png');
+    background-size: cover;
+    position: relative;
+    
+}
+
+.foto-cadastro
+{
+    width: 100px;
+    height: 100px;
+    border: 4px solid white;
+    position: relative;
+    border-radius: 50%;
+    margin: auto;
+    transform: translateY(-50%);
+    background-image: url('../img/jhin.jpg');
+    background-size: cover;
+}
+
+.nome
+{
+    width: 100%;
+    height: 50px ;
+    text-align: center;
+    font-size: 18px;
+    position: relative;
+    transform: translateY(-40%);
+}
+
+h4
+{
+    margin-bottom: 5px;
+}
+
+span
+{
+    font-size: 18px;
+    opacity: 0.5;
+}
+
+.container
+{
+    width: 100%;
+    height: 100px;
+    border-top: 1px solid rgba(0, 0, 0, 0.1);
+    text-align: center;
+
+}
+
+.text-box
+{
+   display: inline-block; 
+   width: 33.33%;
+   height: 70px;
+   margin-top: 10px;
+   margin-left: -4px;
+}
+
+.redes
+{
+    font-size: 16px;
+}
+
+@media  screen and (max-width: 400px)
+{
+    .fundo
+    {
+        width: 100%;
+        
+        overflow: hidden;
+    }
+
+    .box1
+    {
+        width: 70%;
+        height: 60%;
+        overflow: hidden;
+    }
+
+    .img-top
+    {
+          width:100%;
+          left: -200px;
+    }
+
+    .img-bot
+    {
+        width:100%;
+        right: -200px;
+    }
+
+    .text-box
+    {
+        margin-bottom: 10px;
+    }
+      
+      
+    
+}
